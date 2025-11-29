@@ -14,6 +14,62 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .project-item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 2.5rem;
+                gap: 1.5rem;
+            }
+            .project-item img.project-logo {
+                width: 120px !important;
+                height: 120px !important;
+                max-width: 120px !important;
+                max-height: 120px !important;
+                min-width: 120px;
+                min-height: 120px;
+                object-fit: cover;
+                border-radius: 8px;
+                flex-shrink: 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .project-item .project-content {
+                flex-grow: 1;
+            }
+            .project-item .project-content a {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #bd5d38;
+                text-decoration: none;
+            }
+            .project-item .project-content a:hover {
+                text-decoration: underline;
+            }
+            .project-item .project-content .project-date {
+                font-size: 0.9rem;
+                color: #6c757d;
+                margin-bottom: 0.5rem;
+            }
+            .project-item .project-content p {
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+            }
+            @media (max-width: 576px) {
+                .project-item {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                .project-item img.project-logo {
+                    width: 100px !important;
+                    height: 100px !important;
+                    max-width: 100px !important;
+                    max-height: 100px !important;
+                    min-width: 100px;
+                    min-height: 100px;
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -70,7 +126,7 @@
                     
                     <!-- CMBverse Project -->
                     <div class="project-item">
-                        <img src="assets/img/cmbverse_logo.png" alt="CMBverse Logo">
+                        <img class="project-logo" src="assets/img/cmbverse_logo.png" alt="CMBverse Logo">
                         <div class="project-content">
                             <a href="https://gabrielemontefalcone.com/CMBverse/" target="_blank">CMBverse</a>
                             <div class="project-date">June 2024 – July 2025 · Austin, Texas</div>
